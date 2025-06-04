@@ -36,7 +36,7 @@ export default {
           title: 'Legacy Story Our Relationship',
           description: 'Sebuah website tentang legacy cinta yang abadi diantara saya dan kekasih.',
           technologies: ['HTML', 'CSS', 'JavaScript'],
-          imageUrl: '/images/foto1.png',
+          imageUrl: `${import.meta.env.BASE_URL}images/foto1.png`,
           demo: 'https://zakijauhari.github.io/legacy-of-our-story/',
           code: 'https://github.com/zakijauhari/legacy-of-our-story.git'
         },
@@ -44,7 +44,7 @@ export default {
           title: 'Aplikasi Manajemen Tugas (To Do List)',
           description: 'Aplikasi untuk mengelola jurnal kegiatan harian.',
           technologies: ['Vue.js', 'CSS', 'SQLYog'],
-          imageUrl: '/images/foto2.png',
+          imageUrl: `${import.meta.env.BASE_URL}images/foto2.png`,
           demo: 'https://zakijauhari.github.io/32-pbk-uts-233510607/',
           code: 'https://github.com/zakijauhari/32-pbk-uts-233510607.git'
         },
@@ -52,7 +52,7 @@ export default {
           title: 'Aplikasi Inventory',
           description: 'Aplikasi untuk mengelola inventory barang.',
           technologies: ['Vue.js', 'CSS', 'SQLYog'],
-          imageUrl: '/images/foto3.png',
+           imageUrl: `${import.meta.env.BASE_URL}images/foto3.png`,
           demo: 'https://zakijauhari.github.io/Tugas-PBK-P10/',
           code: 'https://github.com/zakijauhari/Tugas-PBK-P10.git'
         }
