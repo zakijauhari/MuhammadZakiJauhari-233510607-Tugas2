@@ -94,7 +94,6 @@ export default {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: all 0.3s ease;
   border: 1px solid var(--border-color);
   
 }
@@ -182,7 +181,6 @@ export default {
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
   color: var(--heading-color);
-  transition: color 0.3s ease;
 }
 
 .project-desc {
@@ -190,7 +188,6 @@ export default {
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
-  transition: color 0.3s ease;
 }
 
 .project-tech {
