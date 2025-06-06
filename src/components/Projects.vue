@@ -52,7 +52,7 @@ export default {
           title: 'Aplikasi Inventory',
           description: 'Aplikasi untuk mengelola inventory barang.',
           technologies: ['Vue.js', 'CSS', 'SQLYog'],
-           imageUrl: `${import.meta.env.BASE_URL}images/foto3.png`,
+          imageUrl: `${import.meta.env.BASE_URL}images/foto3.png`,
           demo: 'https://zakijauhari.github.io/Tugas-PBK-P10/',
           code: 'https://github.com/zakijauhari/Tugas-PBK-P10.git'
         }
@@ -65,7 +65,8 @@ export default {
 <style scoped>
 .projects.section {
   padding: 4rem 0;
-  background-color: #f9f9f9;
+  background-color: var(--bg-primary);
+  
 }
 
 .container {
@@ -78,7 +79,8 @@ export default {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--heading-color);
+  transition: color 0.3s ease;
 }
 
 .projects-grid {
@@ -88,16 +90,18 @@ export default {
 }
 
 .project-card {
-  background: white;
+  background-color: var(--bg-secondary);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .project-image {
@@ -138,6 +142,7 @@ export default {
 .project-links {
   display: flex;
   gap: 1rem;
+  
 }
 
 .demo-btn, .code-btn {
@@ -149,13 +154,13 @@ export default {
 }
 
 .demo-btn {
-   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   color: white;
 }
 
 .demo-btn:hover {
-   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .code-btn {
@@ -176,14 +181,16 @@ export default {
 .project-title {
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
-  color: #2c3e50;
+  color: var(--heading-color);
+  transition: color 0.3s ease;
 }
 
 .project-desc {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
+  transition: color 0.3s ease;
 }
 
 .project-tech {
@@ -193,12 +200,21 @@ export default {
 }
 
 .tech-tag {
-  background: rgba(74, 108, 247, 0.1);
-  color: #4a6cf7;
+  background-color: var(--bg-primary);
+  
+  color: var(--tech-tag-text);
   padding: 0.4rem 0.9rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--tech-tag-border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
